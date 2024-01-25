@@ -68,17 +68,17 @@
 
 /* now change each p tag within the parent a tag  */
 /* this is the 2nd child  */
-a p:nth-child(2) {
+a p:nth-child(2), .experience-card p:nth-child(1) {
     font-weight: bolder;
     font-size: 1.1rem;
     margin: 0.5rem 0px;
 }
 
-a p:nth-child(3) {
+a p:nth-child(3), .experience-card p:nth-child(2) {
     font-style: italic;
 }
 
-a p:nth-child(4) {
+a p:nth-child(4), .experience-card p:nth-child(4) {
     font-style: italic;
     font-weight: bolder;
     letter-spacing: 0.2rem;
@@ -92,4 +92,28 @@ a p:nth-child(4) {
     width: 100%;
     gap: 4rem;
     margin-top: 2rem;
+}
+
+
+/* ---- Experience section ---- */
+
+.experience-section {
+    margin: 4rem; /* add space between both sections */
+}
+
+.experience-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.experience-list {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 4rem;
+    justify-content: center;
 }
